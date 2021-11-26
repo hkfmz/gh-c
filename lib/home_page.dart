@@ -40,15 +40,20 @@ class _HomePageState extends State<HomePage> {
         child: _widgetOptions.elementAt(_selectedIndex!),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.lightGreen,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_bag_outlined),
+            icon: Icon(Icons.shopping_bag_outlined, color: Colors.lightGreen,),
             label: 'Catalogue',
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.contact_phone_outlined), label: 'Contact'),
+              icon: Icon(Icons.contact_phone_outlined, color: Colors.lightGreen,), 
+              label: 'Contact',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.my_library_books_outlined), label: 'CGU'),
+              icon: Icon(Icons.my_library_books_outlined, color: Colors.lightGreen,), 
+              label: 'CGU',
+          ),
         ],
         currentIndex: _selectedIndex!,
         onTap: _onItemTap,
